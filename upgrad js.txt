@@ -1,0 +1,262 @@
+interpreter  - processes each line in the program one by one and if an error is encountered on any line, it is reported then and there. 
+compiler -processes the entire program at once and at the end, it reports all the errors (if any) in the entire program
+
+---You are expected to use the console.log() function only once. 
+literal
+3.14
+500
+true
+'rakesh'
+------
+var pi;
+pi=3.14;
+is a combination of a literal and a variable where pi  is a variable which stores the literal 3.14.
+variables are declared using the var keyword
+identifier/variable --Only alphabets, numbers, $ and _ are allowed in a variable name. No other character is allowed.
+You cannot start a variable name with a number. It can start with only an alphabet or a $ sign or an _.
+var gm@il=10; --- wrong symbols can't be used as identifier
+keywords can't be used as identifier
+camelcase is best practice in js
+case sensitive var and VAR ar both different  , we var in js
+firstName not defined -- used in console.log but non variabe name isn't declared.
+coomment -- //
+multiline comment -----/*    */ 
+var numberOne = 2018;
+var numberTwo = 1996;
+-------
+// Store the result of their subtraction (numberTwo subtracted from numberOne) in a third variable
+var result=numberOne-numberTwo;
+// Print the result
+console.log(result);
+-------
+commonly used logical operators are AND (&&), OR (||) and NOT (!). 
+console.log("ADURU" ,"VENKATA"," RAKESH"," KUMAR ",'21');
+console.log('UpGrad', 2+1, 20 > 10);
+var city = "Berlin";
+console.log(city);
+var firstName="rakesh";
+console.log(firstName);
+var x = true;
+var y = false;
+var a=10;
+var b=110;
+console.log(x && y);
+console.log(a == b);
+---------
+/  associativity -- left to right  var x=125/25/5; console.log(x); //1
+precedence / --14
+** --15
+()--grouping --20
+Associativity determines the way in which operators of the same precedence are evaluated.
+--------
+JavaScript has six primitive datatypes - string, number, boolean, null, undefined (five types in ES5) and Symbol (sixth type in ES6)
+-------
+var planet='jupiter'; 
+// Print the variable here
+console.log(planet);
+-------
+console.log("C:\\Program Files\\nodejs");//C:\Program Files\nodejs
+console.log("\"upgrad\"\n is  a distance education platform");
+o/p-
+"upgrad"
+is  a distance education platform
+--------
+var stringOne = "upGrad";
+var stringTwo = "Education";
+var result=stringOne+stringTwo;
+console.log(result );//upGradEducation
+console.log(result.length);//15
+console.log(6+'upGrad'+2+3+'upGrad'+2+1);//6upGrad23upGrad21
+console.log(2+3+'upGrad'+2+1);//5upGrad21 left to right
+NAN-not a number
+var x="10";
+var b="12k";
+var sub=x-b; 
+console.log(isNaN(sub)); //true
+.toString --converts number to string
+string to number --numberfunction
+console.log(Number("10.00"));//number to string //10
+console.log(Number("10.20")); //number to string //10.2
+console.log(Number("10a")); //NaN
+parseINT()---STRING TO AN INTEGER NUMBER
+parseFloat()---STRING TO A DECIMAL NUMBER
+console.log(true =="true"); //false
+console.log(true ||0); //true
+console.log(false == 0); //true
+0-false
+1-true
+------
+null data type --not assign any value at all
+var marks =null;//null is used when you don't know value and some value has to assign
+if a variable is declared but unassigned then it's value is undefined 
+undefined is used when we have  nothing to assign
+
+console.log(isNaN(1+undefined));//1+undefined is undefined so  not  a number so it's true
+console.log(isNaN(1+undefined));//1+nothing is 1 ,so 1 a number so it's false
+not defined - not having memeory for a variable yet
+var x --defined
+Null signifies that the container is purposefully kept empty. On the other hand, 
+undefined means that the container does not have anything inside it. Null is like saying I am keeping my tea container empty. 
+Undefined is like saying that I have a container but I have forgotten to put anything inside it. 
+That’s why null is set by the user i.e you. This is not the case with undefined as any value which has not been defined 
+is initialized undefined by the translator.
+
+There is also something known as not defined, which means that something hasn't even been declared or allocated memory. 
+This is like saying that my container doesn't even exist. 
+
+type of operator for to find type of a variable
+
+=== checks datatype of two operands
+console.log("0"==0);//true
+console.log("0"===0);//false
+You also learnt about ===, which is known as the strict equality operator.
+It returns true only when both the data type as well as the values are equal. 
+--------
+// Store the name of your hometown in a variable named hometown
+var hometown='nellore';
+// Store whether you stay in your hometown in a variable named doYouStay
+var doYouStay=true
+// Print the data type of variable hometown
+console.log(typeof(hometown));//string
+// Print the data type of variable doYouStay
+console.log(typeof(doYouStay));//boolean
+------
+You can use parseFloat() to extract numbers from strings like 23.5kg, and unlike parseInt(), 
+the number is provided along with digits after the decimal point too. Thus, this option is the correct choice.
+------
+var message = "The nearest city is";
+var city = "Goa";
+var displayText = message + " " + city;
+console.log(displayText);
+-----
+var x = 1 + 2 + ' Hello World ' + 3 + 4;
+console.log(x);//3helloworld34
+-----
+A truthy value is a value which is considered true when encountered in a Boolean context. 
+All values are truthy unless they are defined as falsy. 
+So, it now makes sense to see what all values are considered falsy.
+falsy values  false,0,"",'',null,undefined,NaN
+truthy values  9,-9,9.22,-9.22,"Srishti","false","0",Infinity,-Infinity
+-----
+console.log("false"==false);
+As false is a falsy value, so no matter what’s the case it won’t be equal to any value written inside quotes as a string.
+ The string 'false' is a truthy value and thus, is not equal to the boolean false. Thus, this option is the correct choice.
+
+----
+var x = 4;
+if (x % 2 == 0) {
+   console.log("x is even.");//"x is even."
+}
+-----
+// Initialize the variable named password with a password of your choice
+var password='jklhh';
+// If the password is greater than or equal to 6 characters in length, print 'Correct password!'
+if (password.length>=6){
+    console.log("Correct password!");
+}else{
+    console.log("Password too short!");
+}
+// If the password is less than 6 characters in length, print 'Password too short!'
+-------
+var level=12;
+// Print Low if the level is less than 14
+if (level<14){
+    console.log("Low"); //this is output
+}else if(level>=14 && level <=17){
+    console.log("Normal");
+}else{
+    console.log("High");
+}
+-----
+condition ? true-block : false-block //ternary operator
+var x = 10;
+x % 2 === 0 ? console.log("Even") : console.log("Odd"); //Even
+or
+var x = 10;
+console.log(x % 2 === 0 ? "Even" : "Odd");
+------
+var city = "Jaipur";
+console.log(city === 'New Delhi' ? console.log('Capital of India') : console.log('Not a capital of India'));
+-----
+// Declare three variables num1, num2 and num3 & initialize them with number values
+var num1=0,num2=20,num3=10;
+// Write code to check which is the smallest number amongst num1, num2 and num3
+if (num1<num2){
+    if (num3>num1)
+    {
+        console.log("num1 is smallest")
+    }
+}else if(num2<num3){
+    console.log("num2 is smallest");
+}else{
+    console.log("num is smallest");
+}
+------
+switch(variableToBeChecked) {
+    case value1: 
+        // code to be executed when variableToBeChecked matches value1
+        break;   
+    case value2: 
+        // code to be executed when variableToBeChecked matches value2
+        break;   
+    case valueN: 
+        // code to be executed when variableToBeChecked matches valueN
+        break;   
+    default:
+        // code to be executed when variableToBeChecked doesn't match any case value
+}
+------
+var category = "women";
+
+switch(category) {
+   case "men":
+       console.log("Showing men\'s apparels!");
+       break;
+   case "women":
+       console.log("Showing women\'s apparels!");
+       break;
+   default:
+       console.log("Showing all apparels!");
+}
+------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
