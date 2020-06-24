@@ -10,6 +10,12 @@ body {
     text-align:center;
      color: teal ;
   }
+  div p{
+      text-align: center;
+      color: black;
+      font-size: 24 px;
+  }
+
   div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
