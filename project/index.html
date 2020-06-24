@@ -2,17 +2,18 @@
 <html>
     <head>
         <title>Travel Expert</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="mystyle.css">
         <style>
             @media (min-width: 500px){ 
                 h1::before{
-                    content:"welcome o my webpage";
+                    content:"welcome to my webpage";
                 }   
             }
             @media (max-width: 499px){ 
                 h1::before{
-                    content:"welcome ";
+                    content:"welcome";
                 }   
             }
             @media print{
@@ -56,26 +57,26 @@
         </style>
     </head>
     <body>
-        <ul>
-            <li><a href="#top">Home</a></li>
-            <li><a href="#middle">contents</a></li>
-            <li><a href="#bottom">contact info</a></li>
+        <ul class="list-group">
+            <li class="list-group-item disabled"><a href="#top">Home</a></li>
+            <li class="list-group-item "><a href="#middle">contents</a></li>
+            <li class="list-group-item "><a href="#bottom">contact info</a></li>
         </ul>
         <div id ="top">
             This is the <span class="name">top</span> of my webpage
         </div>       
         <div>
-            <h1 style ="text-align:center">Hi,  I Am Rakesh . Hola  !</h1>
+            <h1 style ="text-align:center"> Hi,  I Am Rakesh . Hola  !</h1>
             <div><a href="school.html"> for work experience</a></div>
             <div><a href="hobbies.html"> for checkout my hobbies</a></div>
             <div><a href="timetable.html"> for schedule</a></div>
             <div><a href="likdis.html"> for my Likes And Dislikes</a></div>
         </div>    
         <div id ="middle">
-            This is the <span class="name">middle</span> of my webpage
+            we  expext u to  be <span class="name">like thisssss</span> rest will be taken care by us
         </div>
         <img src ="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg" width="50%" height="50%">
-        <h1> my favorite  vacation trips</h1>
+        <h1> spent weekend's in heaven</h1>
         <div class="gallery">
             <img src="https://born2invest.com/wp-content/uploads/2018/07/Vietnam-gets-%E2%80%98handsy%E2%80%99-with-new-tourist-attraction-4.png"  width="600" height="400">
             <div class="desc">Vietnam-attraction</div>
@@ -94,12 +95,16 @@
          <div class="gallery">
               <img src="https://www.planetware.com/photos-large/THA/thailand-pai.jpg" width="600" height="400">
             <div class="desc">thailand-pai</div>
-</div>
-        <table id="bottom" class="screen-only">
+    </div>
+    <div class="screen-only">
+        <table id="bottom" class="table">
+            <thead>
             <tr>
                <th>Branches</th>
                 <th>phone numbers</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <th>Newyork</th>
                 <th>91-789-458-629</th>
@@ -116,7 +121,8 @@
                 <th>Bejing</th>
                 <th>98-456-789-123</th>
              </tr>
+             </tbody>
         </table>
-    
+    </div>
     </body>
 </html>
