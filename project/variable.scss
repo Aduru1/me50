@@ -1,0 +1,29 @@
+$color:red;
+ul{
+    li{
+    font-size: 14 px;
+    color: $color;
+}}
+h2{
+    font-size: 14 px;
+    color: $color;  
+}
+div{
+    p{
+        font-size: 20px;
+        color: green;
+    }
+}
+%message{
+    font-family: sans-serif;
+    font-size: 18 px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding:20 px;
+    margin: 20 px;
+}
+div {
+    a{
+    @extend %message;
+    background-color: green;
+}}
