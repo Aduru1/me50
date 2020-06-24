@@ -1,43 +1,123 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Webpage</title>
+        <title>Travel Expert</title>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="mystyle.css">
         <style>
+            @media screen(min-width: 500px){ 
+                h1::before{
+                    content:"welcome o my webpage";
+                }   
+            }
+            @media screen(max-width: 499px){ 
+                h1::before{
+                    content:"welcome ";
+                }   
+            }
+            @media print{
+                .screen-only{
+                    display: none;
+                }
+            }
+            a::before{
+                content: "\21d2 clickhere";
+                font-weight: bold;
+            }
             #top{
                 color:chocolate;
                 font-size: 36px;
+                font-family: Arial, Helvetica, sans-serif;
             }
             #middle{
                 color:red;
                 font-size: 36px;
+                font-family: "Lucida Console", Courier, monospace;
             }
             #bottom{
                 color:crimson;
                 font-size: 36px;
+                font-family: "Times New Roman", Times, serif;
             }
             .name{
                 font-weight: bold;
                 color: rgb(0, 255, 13);
             }
+            table{
+            border: 2px solid black;
+            width: 50%;
+            border-collapse: collapse;
+             }
+            td,th{
+            text-align: center;
+            padding:5 px;
+            border: 1px solid black;
+            }
         </style>
     </head>
     <body>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#middle">contents</a></li>
+            <li><a href="#bottom">contact info</a></li>
+        </ul>
         <div id ="top">
             This is the <span class="name">top</span> of my webpage
         </div>
-        <h1 style ="color:blue; text-align:center" >Hi,  I Am Rakesh . my intrests !</h1>
+        
         <div>
-        <a href="school.html">here you can find my details</a></div>
-        <div><a href="hobbies.html">here you can find my hobbies</a></div>
-        <div><a href="timetable.html">here you can find my today's schedule</a></div>
-    <div><a href="likdis.html">here you can find my Likes And Dislikes</a></div>
-    <div id ="middle">
-        This is the <span class="name">middle</span> of my webpage
+            <h1>Hi,  I Am Rakesh . Hola  !</h1>
+            <div><a href="school.html"> work experience</a></div>
+            <div><a href="hobbies.html">checkout my hobbies</a></div>
+            <div><a href="timetable.html">schedule</a></div>
+            <div><a href="likdis.html"> my Likes And Dislikes</a></div>
+        </div>    
+        <div id ="middle">
+            This is the <span class="name">middle</span> of my webpage
+        </div>
+        <img src ="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg" width="50%" height="50%">
+        <h1> my favorite  vacation trips</h1>
+        <div class="gallery">
+            <img src="https://born2invest.com/wp-content/uploads/2018/07/Vietnam-gets-%E2%80%98handsy%E2%80%99-with-new-tourist-attraction-4.png"  width="600" height="400">
+            <div class="desc">Vietnam-attraction</div>
+        </div> 
+
+        <div class="gallery">
+              <img src="https://www.planetware.com/photos-large/THA/thailand-koh-phi-phi.jpg"  width="600" height="400">
+            <div class="desc">thailand-koh-phi-phi</div>
+        </div>
+
+        <div class="gallery">
+              <img src="https://www.planetware.com/photos-large/THA/thailand-railay-beach.jpg"  width="600" height="400">
+            <div class="desc">thailand-railay-beach</div>
     </div>
-    <img src ="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg" width="50%" height="50%">
-    <div id ="bottom">
-        This is the <span class="name">bottom</span> of my webpage
-    </div>
+
+         <div class="gallery">
+              <img src="https://www.planetware.com/photos-large/THA/thailand-pai.jpg" width="600" height="400">
+            <div class="desc">thailand-pai</div>
+</div>
+        <table id="bottom" class="screen-only">
+            <tr>
+               <th>Branches</th>
+                <th>phone numbers</th>
+            </tr>
+            <tr>
+                <th>Newyork</th>
+                <th>91-789-458-629</th>
+            </tr>
+             <tr>
+                <th>Los Angels</th>
+                <th>98-456-789-123</th>
+             </tr>
+            <tr>
+                <th>California</th>
+                <th>98-456-789-s123</th>
+            </tr>
+            <tr>
+                <th>Bejing</th>
+                <th>98-456-789-123</th>
+             </tr>
+        </table>
+    
     </body>
 </html>
